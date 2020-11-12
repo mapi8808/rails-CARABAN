@@ -19,6 +19,7 @@ end
     end
    
   def edit
+    @blog = Blog.find(params[:id])
   end
   
    private
