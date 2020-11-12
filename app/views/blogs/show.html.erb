@@ -55,11 +55,12 @@
       </div>
       <%= image_tag "img/forest.jpg", class:"single-image" %>
       <p class="single-text">
-        <!-- body部分 下で変更します -->
+        
         <%= @blog.body %>
         <!-- body部分 ここまで -->
       </p>
-      <a href="#">編集</a>
+       <!-- <a href="#">編集</a> を削除し、以下コードに変更 -->
+       <%= link_to "編集", edit_blog_path(@blog) %>
       <a href="#">削除</a>
       <div class="author-case">
         <div class="author-image"></div>
