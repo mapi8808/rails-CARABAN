@@ -44,23 +44,22 @@
       <div class="blog-box-content">
         <p class="category">
           <!-- category部分 下で変更します -->
-          <%= @blog.category %>
+             <%= @blog.category %>
           <!-- category部分 ここまで -->
         </p>
         <p class="blog-date">
           <!-- created_at部分 下で変更します -->
-          <%= @blog.created_at %>
+            <%= @blog.created_at %>
           <!-- created_at部分 ここまで -->
         </p>
       </div>
       <%= image_tag "img/forest.jpg", class:"single-image" %>
       <p class="single-text">
-        
-        <%= @blog.body %>
+        <!-- body部分 下で変更します -->
+       <%= @blog.body %>
         <!-- body部分 ここまで -->
       </p>
-       <!-- <a href="#">編集</a> を削除し、以下コードに変更 -->
-       <%= link_to "編集", edit_blog_path(@blog) %>
+      <%= link_to "編集", edit_blog_path(@blog) %>
       <%= link_to "削除", blog_path(@blog), method: :delete %>
       <div class="author-case">
         <div class="author-image"></div>
